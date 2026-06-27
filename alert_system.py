@@ -5,10 +5,10 @@ from twilio.rest import Client
 class AlertSystem:
     def __init__(self):
         # The user will need to put their own credentials here
-        self.account_sid = os.environ.get("TWILIO_ACCOUNT_SID", "")
-        self.auth_token = os.environ.get("TWILIO_AUTH_TOKEN", "")
-        self.from_phone_number = os.environ.get("TWILIO_PHONE_NUMBER", "")
-        self.to_phone_number = os.environ.get("TARGET_PHONE_NUMBER", "")
+        self.account_sid = os.environ.get("TWILIO_ACCOUNT_SID", "YOUR ACC SID")
+        self.auth_token = os.environ.get("TWILIO_AUTH_TOKEN", "AUTH_TOKEN")
+        self.from_phone_number = os.environ.get("TWILIO_PHONE_NUMBER", "TWILIO NUMBER")
+        self.to_phone_number = os.environ.get("TARGET_PHONE_NUMBER", "MOBILE NUMBER")
         
         self.cooldown_period = 30  # Don't send more than 1 alert every 30 seconds
         self.last_alert_time = 0
