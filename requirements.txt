@@ -1,0 +1,9 @@
+opencv-python
+mediapipe
+numpy
+librosa
+sounddevice
+tensorflow
+twilio
+scipy
+flask
